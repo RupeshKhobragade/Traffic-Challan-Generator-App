@@ -6,7 +6,7 @@ from fpdf import FPDF
 from datetime import datetime
 
 # Configure Google Gemini API
-genai.configure(api_key="AIzaSyCNyOZ4YRqgLf5b6N7q15hWVTUwqXU3bEE")
+genai.configure(api_key="---Your Gemini API Key---")
 model = genai.GenerativeModel('gemini-1.5-flash')
 
 # Streamlit App Configuration
@@ -35,14 +35,14 @@ st.markdown("Automated traffic violation detection and enforcement system")
 # Violation Database (changed ₹ to Rs.)
 VIOLATIONS = {
     "Not wearing helmet": "Rs. 500",
-    #"Red light violation": "Rs. 500",
+    "Red light violation": "Rs. 500",
     "No registration": "Rs. 5000",
     "No driving license": "Rs. 5000",
-    #"Drunk driving": "Rs. 10000",
-    #"Over-speeding": "Rs. 1000",
-    #"Dangerous driving": "Rs. 5000",
+    "Drunk driving": "Rs. 10000",
+    "Over-speeding": "Rs. 1000",
+    "Dangerous driving": "Rs. 5000",
     "No insurance": "Rs. 2000",
-    #"Triple riding": "Rs. 1000",
+    "Triple riding": "Rs. 1000",
     "Illegal parking": "Rs. 400",
     "Vehicle modification": "Rs. 3000",
     "Mobile phone usage": "Rs. 1000",
